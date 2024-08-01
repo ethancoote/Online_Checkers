@@ -1,5 +1,5 @@
 // check if mouse is hovered
-if hover == true {
+if hover == true || selected == true {
 	sprite_index = sSquareHover;
 } else {
 	sprite_index = sSquare;

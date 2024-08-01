@@ -1,9 +1,19 @@
 // setting sprite for man
 if player == 1 {
-	sprite_index = sP1;
+	if selected {
+		sprite = sP1Select;
+	} else {
+		sprite = sP1;
+	}
+	
 } else if player == 2 {
-	sprite_index = sP2
+	if selected {
+		sprite = sP2Select;
+	} else {
+		sprite = sP2;
+	}
 }
 
 // draw man
-draw_sprite(sprite_index, image_index, x, y);
+sprite_index = sprite;
+draw_self();

@@ -4,10 +4,11 @@ if start_game == true {
 	
 	// player 1 men
 	for (i=0; i<12; i++) {
-		_inst = instance_create_depth(p1_men_pos[i][0], p1_men_pos[i][1], -1, oP);
+		_inst = instance_create_depth(p1_men_pos[i][0], p1_men_pos[i][1], 0, oP);
 		with (_inst) {
 			player = 1;
 			pos = oControl.i;
+			//pos = 0;
 		}
 	}
 	
