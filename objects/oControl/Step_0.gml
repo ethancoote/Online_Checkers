@@ -26,7 +26,13 @@ if start_game == true {
 		_inst = instance_create_depth(square_pos[i][0], square_pos[i][1], 0, oSquare);
 		with (_inst) {
 			pos = oControl.i;
+			if oControl.i < 12 {
+				player = 1;
+			} else if oControl.i > 20 {
+				player = 2;
+			}
 		}
+		array_push(inst_array, _inst);
 	}
 	
 	start_game = false;

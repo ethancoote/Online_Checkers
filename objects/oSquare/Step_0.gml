@@ -27,16 +27,13 @@ if mouse_rb {
 // man selection
 var _inst = instance_nearest(x, y, oP);
 if _inst != noone {
-	
 	if _inst.pos == pos {
 		if selected == true {
 			with (_inst) {
 				selected = true;
 			}
-		
 		} else {
 			_inst.selected = false;
 		}
 	}
-	
 }
